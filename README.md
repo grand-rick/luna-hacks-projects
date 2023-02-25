@@ -21,4 +21,5 @@
 
 ## Software Development
 - [Password Generator](https://github.com/grand-rick001/luna-hacks-projects/)
+- [Random Quote Generator](https://random-quote-generator-seven-chi.vercel.app/)
 - Create a restful API
