@@ -1,10 +1,12 @@
 PROPOSED PROJECTS
-1. Open-source track
+## **Open-source track**
+- Contribute to an existing project
+
+## **Software Development**
 - Create a useless hack *
 - Write a sorting method
 - Random Quote generator
 - Random number generator 
-
 - Use a Email Api 
 - Use a Music API *
 - Create a database *
