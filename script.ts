@@ -14,6 +14,7 @@ class PasswordGenerator {
 		...numbers,
 		...special
 	];
+	passwordArray: string[] = [];
 	password: string = '';
 
 	getAllCharacters():  string[] {
@@ -22,10 +23,11 @@ class PasswordGenerator {
 
 	getRandomPassword(): string {
 		for (let i = 0; i < this.passwordLength; i++) {
-			let randomInteger: number = Math.floor(Math.random() * this.allCharacters.length) + 1;
-			this.password += this.allCharacters[randomInteger];
+			let randomInteger: number = Math.floor(Math.random() * this.allCharacters.length);
+			this.passwordArray.push(this.allCharacters[randomInteger]);
 		}
 
+		this.password = this.passwordArray.join('');
 		console.log(this.password);
 		return this.password;
 	}

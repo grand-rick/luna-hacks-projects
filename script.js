@@ -13,6 +13,7 @@ var PasswordGenerator = /** @class */ (function () {
     function PasswordGenerator() {
         this.passwordLength = 14;
         this.allCharacters = __spreadArrays(lowerAlphabets, upperAlphabets, numbers, special);
+        this.passwordArray = [];
         this.password = '';
     }
     PasswordGenerator.prototype.getAllCharacters = function () {
@@ -20,9 +21,10 @@ var PasswordGenerator = /** @class */ (function () {
     };
     PasswordGenerator.prototype.getRandomPassword = function () {
         for (var i = 0; i < this.passwordLength; i++) {
-            var randomInteger = Math.floor(Math.random() * this.allCharacters.length) + 1;
-            this.password += this.allCharacters[randomInteger];
+            var randomInteger = Math.floor(Math.random() * this.allCharacters.length);
+            this.passwordArray.push(this.allCharacters[randomInteger]);
         }
+        this.password = this.passwordArray.join('');
         console.log(this.password);
         return this.password;
     };
