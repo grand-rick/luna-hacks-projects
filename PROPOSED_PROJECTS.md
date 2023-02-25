@@ -4,7 +4,7 @@ PROPOSED PROJECTS
 
 ## **Software Development**
 - Create a useless hack *
-- Write a sorting method
+- Write a sorting method * (Bubble sort)
 - Random Quote generator
 - Random number generator 
 - Use a Email Api 
