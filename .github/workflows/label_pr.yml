@@ -1,0 +1,20 @@
+name: Label Pull Requests
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  label_pr:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Label #luna label to Pull Requests
+      uses: actions/github-script@v4
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const labels = ['#luna'];
+          
+          # Add #luna label to the pull request
+          const issue = context.issue({ labels: labels });
+          await github.issues.addLabels(issue);
