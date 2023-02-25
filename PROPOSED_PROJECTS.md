@@ -1,6 +1,6 @@
 PROPOSED PROJECTS
 ## **Open-source track**
-- Contribute to an existing project
+- Contribute to an existing project ✔
 
 ## **Software Development**
 - Create a useless hack *
