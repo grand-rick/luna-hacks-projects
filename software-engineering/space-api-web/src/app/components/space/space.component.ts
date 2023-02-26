@@ -54,6 +54,9 @@ export class SpaceComponent implements OnInit {
   }
 
   showJoke(): void {
+    this.httpService.getJokesData().subscribe(data => {
+      this.jokesData = data;
+    })
     alert(this.jokesData.setup);
     alert(this.jokesData.delivery);
   }
