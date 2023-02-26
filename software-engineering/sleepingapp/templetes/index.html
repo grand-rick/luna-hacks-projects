@@ -1,0 +1,36 @@
+<!-- sleep.html -->
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Sleep Tracker</title>
+</head>
+<body>
+	<h1>Enter your sleep data</h1>
+	<form method="POST" action="/sleep">
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date">
+		<br>
+		<label for="hours">Hours of sleep:</label>
+		<input type="number" id="hours" name="hours" step="0.1" min="0" max="24">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Hours of Sleep</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for index, row in sleep_data.iterrows() %}
+			<tr>
+				<td>{{ row['date'] }}</td>
+				<td>{{ row['hours'] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
