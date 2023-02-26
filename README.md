@@ -1,4 +1,7 @@
-# Luna Projects 
+# Luna Hacks Projects 
+> Luna Hacks 2.0 Hackathon projects
+
+![luna-hacks](./images/luna.jpeg)
 
 ## Open Source
 - [GitHub pages](https://grand-rick001.github.io/e-commerce-project/)
