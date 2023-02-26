@@ -10,6 +10,9 @@ URL shortner module
 """
 
 class UrlShortener(cmd.Cmd):
+    """
+    URL shortner console 
+    """
     intro = 'Welcome to the URL shortener CLI. Type "help" to list commands.\n'
     prompt = '(shortener) '
     
